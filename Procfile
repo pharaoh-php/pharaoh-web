@@ -1,1 +1,1 @@
-web: $(composer config bin-dir)/heroku-php-nginx web/
+web: composer warmup && $(composer config bin-dir)/heroku-php-nginx web/

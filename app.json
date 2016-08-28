@@ -1,0 +1,15 @@
+{
+  "name": "pharaoh-web",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}

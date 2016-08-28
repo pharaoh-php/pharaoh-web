@@ -14,8 +14,10 @@
     "autoload-dev": {
     },
     "require": {
-        "php": "^7.0.10",
-
+        "php": ">=7.0.10",
+        "doctrine/orm": "^2.5",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/doctrine-cache-bundle": "^1.2",
         "symfony/symfony": "^3.1"
     },
     "require-dev": {
@@ -25,6 +27,10 @@
         "symfony/phpunit-bridge": "^3.0"
     },
     "scripts": {
+        "test": [
+            "@composer validate",
+            "phpunit"
+        ]
     },
     "config": {
         "platform": {

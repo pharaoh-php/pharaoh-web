@@ -11,11 +11,14 @@
     "scripts": {
     },
     "env": {
+        "SYMFONY_ENV": "stage"
     },
     "formation": {
     },
     "addons": [
     ],
     "buildpacks": [
+        "heroku/nodejs",
+        "heroku/php"
     ]
 }

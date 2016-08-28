@@ -15,6 +15,9 @@
     "formation": {
     },
     "addons": [
+        {
+            "plan": "newrelic:wayne"
+        }
     ],
     "buildpacks": [
     ]

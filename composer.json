@@ -16,12 +16,18 @@
     "autoload-dev": {
     },
     "require": {
-        "php": "^7.0.10"
+        "php": "^7.0.10",
+
+        "symfony/symfony": "^3.1"
     },
     "require-dev": {
-        "heroku/heroku-buildpack-php": "^110.0"
+        "heroku/heroku-buildpack-php": "^110.0",
+        "sensio/generator-bundle": "^3.0",
+        "symfony/phpunit-bridge": "^3.0"
     },
     "scripts": {
+        "compile": [
+        ]
     },
     "config": {
         "platform": {

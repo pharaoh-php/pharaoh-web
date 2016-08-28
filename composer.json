@@ -1,8 +1,8 @@
 {
     "name": "pharaoh/pharaoh-web",
     "description": "The web UI for Pharaoh",
-    "type": "project",
     "license": "Apache-2.0",
+    "type": "project",
     "authors": [
         {
             "name": "Steve Buzonas",
@@ -10,5 +10,33 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true,
+    "autoload": {
+    },
+    "autoload-dev": {
+    },
+    "require": {
+        "php": "^7.0.10"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^110.0"
+    },
+    "scripts": {
+    },
+    "config": {
+        "platform": {
+            "php": "7.0.10"
+        }
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
+        "symfony-tests-dir": "tests",
+        "symfony-assets-install": "relative",
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
 }

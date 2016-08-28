@@ -22,6 +22,7 @@
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "^110.0",
+        "phpunit/phpunit": "^5.0",
         "sensio/generator-bundle": "^3.0",
         "symfony/phpunit-bridge": "^3.0"
     },

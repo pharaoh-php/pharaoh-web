@@ -1,0 +1,7 @@
+{
+    "name": "pharaoh",
+    "dependencies": {
+        "uglifycss": "*",
+        "uglify-js": "*"
+    }
+}

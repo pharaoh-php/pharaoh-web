@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
  */
 $loader = require __DIR__.'/../app/autoload.php';
 
-$env   = getenv('SYMFONY_ENV')   ?: 'stage';
+$env   = getenv('SYMFONY_ENV')   ?: 'staging';
 $debug = getenv('SYMFONY_DEBUG') ? true : false;
 
 if ($debug && class_exists('Symfony\Component\Debug\Debug')) {

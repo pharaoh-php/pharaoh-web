@@ -1,0 +1,14 @@
+{
+    "name": "pharaoh/pharaoh-web",
+    "description": "The web UI for Pharaoh",
+    "type": "project",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Steve Buzonas",
+            "email": "steve@fancyguy.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

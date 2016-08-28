@@ -26,6 +26,6 @@ notifications:
     rooms:
       - secure: 0mVI7taFgAbeBwyJSOqzm+mU3izau/9wS2Mf2O99XowI2opWAJQS+KxtOAPbr+K29IFMeIlzWarEPIgPfspXDlWtk4CCxR/QjP51/BTSxa0pykS6cOtDM6tDkbs3ZFMEZHhPfHdXQ3WBbkx6TECGAbkmYU/FtjjN8au/c5kRnj3MUEmIFdzKs64U8WXTmTPao9uYXKMsWCi+8l3JQ45VGj05XYVYIEX+FgRXyq5laM3f9iRW30+O3g6ZGSWZ4SK2O66xIuNU+FdZLoncPzMg5XuFaznNLvyQIX8HB781pmGx4dsih4zhiA94nel7s6+0Ha2GpYWZAajRr1fvxxo2JFRgU4dSj3Fi3vbL2tX3zUbE0W1tLLpEBZ1Ct10wA+LCmsjld8dB+9CWDUHPjNCIGRXeprLREzBhGxadrMFNFW0Im24uXi7fCuaLFFhH2V478Xtu4VvMwAqwd+s0yE+JvnewoiTIfdSr+6GiqhoNUSeKaEdf5ISsJOxJqY5ixp4iIx/SETdmy4uhUFaVnUT59JTfL79wFbnLWnxtB4pGIxPdzXWuLKesxh/cJOzt6xbx0ezEkrCZdOf2K+4NJTs+gMUadMSKYiO5nOZX23GRJ4t0rTTdUkMyzXIxY42UWAbtIUamTRQ2OfvwoQ2vuqhQ2n0dgUKHLxY4ic6iQjUsxro=
     template:
-      - '<a href="https://github.com/pharaoh-php/pharaoh-web">%{repository}</a>#<a href="%{build_url}">%{build_number}</a> (%{branch} - %{commit} : %{author}): %{message} (<a href="%{compare_url}">View changes</a>)'
+      - '<a href="https://github.com/pharaoh-php/pharaoh-web">%{repository}</a>#<a href="%{build_url}">%{build_number}</a> (<a href="https://github.com/pharaoh-php/pharaoh-web/tree/%{branch}">%{branch}</a> - <a href="https://github.com/pharaoh-php/pharaoh-web/commit/%{commit}">%{commit}</a> : %{author}): %{message} (<a href="%{compare_url}">View changes</a>)'
     format: html
     notify: true

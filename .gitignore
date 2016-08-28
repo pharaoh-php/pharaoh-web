@@ -1,1 +1,8 @@
+/kernel/bootstrap.php.cache
+/kernel/config/parameters.yml
+/var/*
+!/var/cache
+/var/cache/*
+!/var/cache/.keep
 /vendor/
+/web/bundles

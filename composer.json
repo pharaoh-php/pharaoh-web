@@ -10,6 +10,7 @@
         }
     ],
     "autoload": {
+        "classmap": [ "kernel/PharaohKernel.php", "kernel/PharaohCache.php" ]
     },
     "autoload-dev": {
     },
@@ -33,9 +34,31 @@
         "symfony/phpunit-bridge": "^3.0"
     },
     "scripts": {
+        "bootstrap": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
+        ],
+        "cache-clear": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+        ],
+        "build": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+        ],
         "test": [
             "@composer validate",
             "phpunit"
+        ],
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "@bootstrap",
+            "@cache-clear",
+            "@build"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "@bootstrap",
+            "@cache-clear",
+            "@build"
         ]
     },
     "config": {
@@ -44,12 +67,15 @@
         }
     },
     "extra": {
-        "symfony-app-dir": "app",
+        "symfony-app-dir": "kernel",
         "symfony-bin-dir": "bin",
         "symfony-var-dir": "var",
         "symfony-web-dir": "web",
         "symfony-tests-dir": "tests",
         "symfony-assets-install": "relative",
+        "incenteev-parameters": {
+            "file": "kernel/config/parameters.yml"
+        },
         "branch-alias": {
             "dev-master": "1.0-dev"
         }

@@ -1,15 +1,21 @@
 {
-  "name": "pharaoh-web",
-  "scripts": {
-  },
-  "env": {
-  },
-  "formation": {
-  },
-  "addons": [
-
-  ],
-  "buildpacks": [
-
-  ]
+    "name": "Pharaoh PHP",
+    "description": "The web interface for pharaoh.hephaestus-ci.com",
+    "keywords": [
+        "composer",
+        "PHP"
+    ],
+    "website": "https://pharaoh.hephaestus-ci.com",
+    "repository": "https://github.com/pharaoh-php/pharaoh-web",
+    "logo": "https://cdn.hephaestus-ci.com/pharaoh.svg",
+    "scripts": {
+    },
+    "env": {
+    },
+    "formation": {
+    },
+    "addons": [
+    ],
+    "buildpacks": [
+    ]
 }

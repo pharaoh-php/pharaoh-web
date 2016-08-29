@@ -1,5 +1,6 @@
 /kernel/bootstrap.php.cache
 /kernel/config/parameters.yml
+/kernel/nginx.conf
 /var/*
 !/var/cache
 /var/cache/*

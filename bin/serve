@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+readpath() {
+    (
+        cd $1
+        echo $(pwd -P)
+    )
+}
+
+declare -r DYNO_NAME=web
+declare -r PROCFILE=$(readpath $(dirname $0)/..)/Procfile
+declare -r COMMAND=$(grep -e "^${DYNO_NAME}: " $PROCFILE | head -n1 | sed "s/${DYNO_NAME}: \(.*\)/\1/")
+
+eval $COMMAND

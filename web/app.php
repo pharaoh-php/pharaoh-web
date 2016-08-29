@@ -6,7 +6,7 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * @var Composer\Autoload\ClassLoader
  */
-$loader = require __DIR__.'/../app/autoload.php';
+$loader = require __DIR__.'/../kernel/autoload.php';
 
 $env   = getenv('SYMFONY_ENV')   ?: 'staging';
 $debug = getenv('SYMFONY_DEBUG') ? true : false;

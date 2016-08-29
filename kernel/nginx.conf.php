@@ -3,11 +3,10 @@ location / {
 }
 
 location @rewriteapp {
-  rewrite ^(.*)% /app.php/$1 last;
+  rewrite ^(.*)$ /app.php/$1 last;
 }
 
 location ~ ^/(app|app_dev|config)\.php(/|$) {
-  try_files @heroky-fcgi @heroku-fcgi;
+  try_files @heroku-fcgi @heroku-fcgi;
   internal;
 }
-
